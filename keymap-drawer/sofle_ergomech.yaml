@@ -87,10 +87,10 @@ layers:
   - '&TAB_R'
   - '&SCNSHOT'
   - PG UP
-  - {t: ▽, type: trans}
   - '&mkp LCLK'
   - '&mmv MOVE_UP'
   - '&mkp RCLK'
+  - {t: ▽, type: trans}
   - BT CLR
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -98,11 +98,11 @@ layers:
   - Ctl+W
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - PG DN
-  - {t: ▽, type: trans}
+  - PG D
   - '&mmv MOVE_LEFT'
   - '&mmv MOVE_DOWN'
   - '&mmv MOVE_RIGHT'
+  - {t: ▽, type: trans}
   - {t: BT, h: '0'}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
