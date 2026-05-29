@@ -98,7 +98,7 @@ layers:
   - Ctl+W
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - PG D
+  - PG DN
   - '&mmv MOVE_LEFT'
   - '&mmv MOVE_DOWN'
   - '&mmv MOVE_RIGHT'
