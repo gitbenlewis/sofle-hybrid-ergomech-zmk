@@ -81,9 +81,9 @@ layers:
   - F11
   - F12
   - EP TOG
-  - Gui+W
+  - {t: ▽, type: trans}
   - '&TAB_L'
-  - Gui+T
+  - Ctl+T
   - '&TAB_R'
   - '&SCNSHOT'
   - PG UP
@@ -95,7 +95,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Ctl+W
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - PG DN
@@ -107,7 +107,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Ctl+N
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
