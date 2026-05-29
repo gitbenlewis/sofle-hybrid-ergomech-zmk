@@ -89,7 +89,7 @@ layers:
   - PG UP
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&mmv MOVE_UP'
   - {t: ▽, type: trans}
   - BT CLR
   - {t: ▽, type: trans}
@@ -100,9 +100,9 @@ layers:
   - {t: ▽, type: trans}
   - PG DN
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&mmv MOVE_LEFT'
+  - '&mmv MOVE_DOWN'
+  - '&mmv MOVE_RIGHT'
   - {t: BT, h: '0'}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
