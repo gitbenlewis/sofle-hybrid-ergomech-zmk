@@ -125,16 +125,16 @@ name: name##_macro {                      \
 
 // ------------------------------------------------------------------------------------------------------------
 // |   F1    |  F2     |  F3   |  F4    |  F5   |  F6     |                        |  F7  |  F8  |  F9   |  F10 |  F11  |  F12   |
-// | EXTPWR  |   LG(W) | LTab  | NEWTAB | RTab  | SCNSHOT |                        | PGUP |      |       |      |       | BTCLR  |
-// |         | LG(`)   | LC(<) |   Apps | LC(>) |         |                        | PGDN |      |       |      |       | BT1    |
-// |         |         |       |        |       |         |      |        |        |      |  {   |   +   |  }   |       | BT2    |
+// | EXTPWR  |         | LTab  | NEWTAB | RTab  | SCNSHOT |                        | PGUP |      |       |      |       | BTCLR  |
+// |         | LG(`)   | LC(<) | delTAB | LC(>) |         |                        | PGDN |      |       |      |       | BT1    |
+// |         |         |       | newWIN |       |         |      |        |        |      |  {   |   +   |  }   |       | BT2    |
 //                     |       |        |       | ^ENTER  |      |        |        |      |      |       |      |
 
             bindings = <
 &kp  F1           &kp F2       &kp F3       &kp F4       &kp F5       &kp F6                       &kp F7    &kp F8        &kp F9        &kp F10      &kp F11      &kp F12
-&ext_power EP_TOG &kp LG(W)    &TAB_L       &kp LG(T)    &TAB_R       &SCNSHOT                     &kp PG_UP &trans        &trans        &trans       &trans       &bt BT_CLR
-&trans            &trans       &trans       &trans       &trans       &trans                       &kp PG_DN &trans        &trans        &trans       &trans       &bt BT_SEL 0
-&trans            &trans       &trans       &trans       &trans       &trans                       &trans    &kp LS(LBKT)  &kp LS(EQUAL) &kp LS(RBKT) &trans       &bt BT_SEL 1
+&ext_power EP_TOG &trans       &TAB_L       &kp LC(T)    &TAB_R       &SCNSHOT                     &kp PG_UP &trans        &trans        &trans       &trans       &bt BT_CLR
+&trans            &trans       &trans       &kp LC(W)    &trans       &trans                       &kp PG_DN &trans        &trans        &trans       &trans       &bt BT_SEL 0
+&trans            &trans       &trans       &kp LC(N)    &trans       &trans                       &trans    &kp LS(LBKT)  &kp LS(EQUAL) &kp LS(RBKT) &trans       &bt BT_SEL 1
                   &trans       &trans       &trans       &trans       &kp RS(RET)  &trans   &trans &trans    &trans        &trans        &trans
                                                                                    &mkp LCLK  &mkp MB5  &kp PG_UP &mkp MB4  &kp PG_DN
             >;
