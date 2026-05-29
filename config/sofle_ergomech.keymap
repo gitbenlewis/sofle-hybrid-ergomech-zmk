@@ -15,6 +15,42 @@
 #define RAISE 2
 #define ADJUST 3
 
+#define MACRO(name, keys)                 \
+name: name##_macro {                      \
+    compatible     = "zmk,behavior-macro";\
+    tap-ms         = <1>;                 \
+    wait-ms        = <1>;                 \
+    #binding-cells = <0>;                 \
+    bindings       = <keys>;              \
+};
+
+/ {
+    macros {
+        MACRO(ESC_A,  &kp ESC &kp A)
+        MACRO(ESC_B,  &kp ESC &kp B)
+        MACRO(ESC_M,  &kp ESC &kp M)
+        MACRO(ESC_Y,  &kp ESC &kp Y)
+        MACRO(ESC_C,  &kp ESC &kp C)
+        MACRO(TAB_R,  &kp LA(LGUI) &kp RIGHT)
+        MACRO(TAB_L,  &kp LA(LGUI) &kp LEFT)
+        MACRO(SCNSHOT,  &kp LSHFT &kp LGUI &kp 4)
+        MACRO(vim_q,  &kp COLON &kp Q &kp EXCL)
+        MACRO(vim_s,  &kp COLON &kp X)
+    };
+};
+
+/ {
+    combos {
+        compatible = "zmk,combos";
+        combo_shift {
+            timeout-ms = <500>;
+            key-positions = <52 55>;
+            bindings = <&kp LSHFT>;
+            layers = <0>;
+        };
+    };
+};
+
 / {
     // Activate ADJUST layer by pressing raise and lower
 
@@ -60,20 +96,20 @@
         lower_layer {
             label = "lower";
 
-            // TODO: Some binds are waiting for shifted keycode support.
-            // ------------------------------------------------------------------------------------------------------------
-            // |       |  F1 |  F2 |  F3  |  F4  |  F5  |                   |  F6  |  F7   |  F8   |  F9  |  F10  |  F11  |
-            // |   `   |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |  F12  |
-            // |       |  !  |  @  |  #   |  $   |  %   |                   |  ^   |  &    |  *    |  (   |   )   |   |   |
-            // |       |  =  |  -  |  +   |  {   |  }   |        |  |       |  [   |  ]    |  ;    |  :   |   \   |       |
-            //               |     |      |      |      |        |  |       |      |       |       |      |
+// TODO: Some binds are waiting for shifted keycode support.
+// ------------------------------------------------------------------------------------------------------------
+// |   1   |  2    |  3    |  4     |  5    |  6     |                         |        |        |        |      |        |       |
+// |   7   |  8    |  9    |  0     |  -_   |  =+    |                         | END    |   (    |   ^    |   )  |   |    |    `  |
+// | TAB   | ESC_M | ESC_A | ESC_B  | COPY  |  PASTE |                         | BKSPC  |   <-   |   v    |  ->  |   #    |  ' "  |
+// |       | CAPS  |  .>   | alt(]) | Undo  | CUT    |       |         |       | HOME   |   [    |   =    |   ]  |   \|   |       |
+//                 |       |        |       | ^ENTER |       |         |  TAB  | LG(>)  | LS(-_) |   ENTER   |      |
 
             bindings = <
-&studio_unlock     &kp F1     &kp F2     &kp F3    &kp F4    &kp F5     &kp F6     &kp F7    &kp F8     &kp F9     &kp F10   &kp F11
-&kp GRAVE  &kp N1     &kp N2     &kp N3    &kp N4    &kp N5     &kp N6     &kp N7    &kp N8     &kp N9     &kp N0    &kp F12
-&trans     &kp EXCL   &kp AT     &kp HASH  &kp DLLR  &kp PRCNT  &kp CARET  &kp AMPS  &kp ASTRK  &kp LPAR   &kp RPAR  &kp PIPE
-&trans     &kp EQUAL  &kp MINUS  &kp PLUS  &kp LBRC  &kp RBRC   &kp LBKT   &kp RBKT  &kp SEMI   &kp COLON  &kp BSLH  &trans
-&trans     &trans     &trans     &trans    &trans    &trans     &trans     &trans    &trans     &trans     &trans
+&kp N1    &kp N2    &kp N3       &kp N4       &kp N5        &kp N6                            &trans        &trans        &trans        &trans    &trans     &trans
+&kp N7    &kp N8    &kp N9       &kp N0       &kp MINUS     &kp EQUAL                         &kp END       &kp LPAR      &kp UP        &kp RPAR  &kp PIPE   &kp GRAVE
+&kp TAB   &ESC_M    &ESC_A       &ESC_B       &kp LC(C)     &kp LG(V)                         &kp BSPC      &kp LEFT      &kp DOWN      &kp RIGHT &kp HASH   &kp SQT
+&trans    &kp CAPS  &kp DOT      &kp RA(RBKT) &kp LC(Z)     &kp LC(X)                         &kp HOME      &kp LBKT      &kp EQUAL     &kp RBKT  &kp BSLH   &trans
+          &trans    &trans       &trans      &trans        &kp RS(RET) &trans       &kp TAB  &kp LC(RIGHT) &kp LS(MINUS) &kp RET       &trans
                                                                 &kp A      &kp B     &kp C      &kp D      &kp E
             >;
 
