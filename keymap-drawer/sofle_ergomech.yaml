@@ -62,11 +62,11 @@ layers:
   - Sft+-
   - RET
   - {t: ▽, type: trans}
-  - A
-  - B
-  - C
-  - D
-  - E
+  - '&mkp LCLK'
+  - '&mkp MB5'
+  - PG UP
+  - '&mkp MB4'
+  - PG DN
   raise:
   - F1
   - F2
@@ -127,11 +127,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - A
-  - B
-  - C
-  - D
-  - E
+  - '&mkp LCLK'
+  - '&mkp MB5'
+  - PG UP
+  - '&mkp MB4'
+  - PG DN
   adjust:
   - BT CLR
   - {t: BT, h: '0'}
@@ -192,11 +192,11 @@ layers:
   - ''
   - ''
   - ''
-  - A
-  - B
-  - C
-  - D
-  - E
+  - '&mkp LCLK'
+  - '&mkp MB5'
+  - PG UP
+  - '&mkp MB4'
+  - PG DN
 combos:
 - p: [52, 55]
   k: LSHFT
