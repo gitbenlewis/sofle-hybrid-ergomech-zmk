@@ -146,6 +146,20 @@ layers:
   - ''
   - ''
   - EP TOG
+  - RGB HUD
+  - RGB HUI
+  - RGB SAD
+  - RGB SAI
+  - RGB EFF
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - RGB BRD
+  - RGB BRI
   - ''
   - ''
   - ''
@@ -167,21 +181,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - RGB TOG
   - ''
   - ''
   - ''
@@ -192,11 +192,11 @@ layers:
   - ''
   - ''
   - ''
-  - ENTER
-  - RIGHT
-  - UP
-  - LEFT
-  - DOWN
+  - A
+  - B
+  - C
+  - D
+  - E
 combos:
 - p: [52, 55]
   k: LSHFT
