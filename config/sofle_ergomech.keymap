@@ -135,10 +135,10 @@ name: name##_macro {                      \
 //                     |       |        |       | ^ENTER  |      |        |        |      |      |       |      |
 
             bindings = <
-&kp  F1           &kp F2       &kp F3       &kp F4       &kp F5       &kp F6                       &kp F7    &kp F8        &kp F9        &kp F10      &kp F11      &kp F12
-&ext_power EP_TOG &trans       &TAB_L       &kp LC(T)    &TAB_R       &SCNSHOT                     &kp PG_UP &trans        &mkp LCLK      &mmv MOVE_UP   &mkp RCLK    &bt BT_CLR
-&trans            &trans       &trans       &kp LC(W)    &trans       &trans                       &kp PG_DN &trans        &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT       &bt BT_SEL 0
-&trans            &trans       &trans       &kp LC(N)    &trans       &trans                       &trans    &kp LS(LBKT)  &kp LS(EQUAL) &kp LS(RBKT) &trans       &bt BT_SEL 1
+&kp  F1           &kp F2       &kp F3       &kp F4       &kp F5       &kp F6                       &kp F7    &kp F8        &kp F9         &kp F10        &kp F11         &kp F12
+&ext_power EP_TOG &trans       &TAB_L       &kp LC(T)    &TAB_R       &SCNSHOT                     &kp PG_UP &trans        &mkp LCLK      &mmv MOVE_UP   &mkp RCLK       &bt BT_CLR
+&trans            &trans       &trans       &kp LC(W)    &trans       &trans                       &kp PG_DN &trans        &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &bt BT_SEL 0
+&trans            &trans       &trans       &kp LC(N)    &trans       &trans                       &trans    &kp LS(LBKT)  &kp LS(EQUAL)  &kp LS(RBKT)   &trans          &bt BT_SEL 1
                   &trans       &trans       &trans       &trans       &kp RS(RET)  &trans   &trans &trans    &trans        &trans        &trans
                                                                                    &mkp LCLK  &mkp MB5  &kp PG_UP &mkp MB4  &kp PG_DN
             >;
