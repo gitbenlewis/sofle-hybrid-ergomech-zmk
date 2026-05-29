@@ -62,11 +62,11 @@ layers:
   - Sft+-
   - RET
   - {t: ▽, type: trans}
-  - ENTER
-  - RIGHT
-  - UP
-  - LEFT
-  - DOWN
+  - '&mkp LCLK'
+  - '&mkp MB5'
+  - PG UP
+  - '&mkp MB4'
+  - PG DN
   raise:
   - F1
   - F2
@@ -127,11 +127,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - ENTER
-  - RIGHT
-  - UP
-  - LEFT
-  - DOWN
+  - '&mkp LCLK'
+  - '&mkp MB5'
+  - PG UP
+  - '&mkp MB4'
+  - PG DN
   adjust:
   - BT CLR
   - {t: BT, h: '0'}
