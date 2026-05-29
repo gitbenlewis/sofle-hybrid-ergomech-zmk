@@ -110,7 +110,7 @@ name: name##_macro {                      \
 &kp TAB   &ESC_M    &ESC_A       &ESC_B       &kp LC(C)     &kp LG(V)                         &kp BSPC      &kp LEFT      &kp DOWN      &kp RIGHT &kp HASH   &kp SQT
 &trans    &kp CAPS  &kp DOT      &kp RA(RBKT) &kp LC(Z)     &kp LC(X)                         &kp HOME      &kp LBKT      &kp EQUAL     &kp RBKT  &kp BSLH   &trans
           &trans    &trans       &trans      &trans        &kp RS(RET) &trans       &kp TAB  &kp LC(RIGHT) &kp LS(MINUS) &kp RET       &trans
-                                                                &mkp LCLK  &mkp MB5  &kp PG_UP &mkp MB4  &kp PG_DN
+                                                                &kp ENTER  &kp RIGHT  &kp UP  &kp LEFT  &kp DOWN
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -132,7 +132,7 @@ name: name##_macro {                      \
 &trans            &trans       &trans       &trans       &trans       &trans                       &kp PG_DN &trans        &trans        &trans       &trans       &bt BT_SEL 0
 &trans            &trans       &trans       &trans       &trans       &trans                       &trans    &kp LS(LBKT)  &kp LS(EQUAL) &kp LS(RBKT) &trans       &bt BT_SEL 1
                   &trans       &trans       &trans       &trans       &kp RS(RET)  &trans   &trans &trans    &trans        &trans        &trans
-                                                                                  &mkp LCLK  &mkp MB5  &kp PG_UP &mkp MB4  &kp PG_DN
+                                                                                   &kp ENTER  &kp RIGHT  &kp UP  &kp LEFT  &kp DOWN
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -153,7 +153,7 @@ name: name##_macro {                      \
 &none             &none           &none           &none           &none           &none                                   &none &none &none &none &none &none
 &none             &none           &none           &none           &none           &none                             &none &none &none &none &none &none
                   &none           &none           &none           &none           &none            &none           &none  &none &none &none &none
-                                                                                                        &mkp LCLK  &mkp MB5  &kp PG_UP &mkp MB4  &kp PG_DN
+                                                                                             &kp ENTER  &kp RIGHT  &kp UP  &kp LEFT  &kp DOWN
             >;
         };
     };
