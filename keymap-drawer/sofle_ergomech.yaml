@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: sofle_ergomech}
 layers:
-  default: ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '', ESC, Q, W, E, R, T, Y, U, I, O, P, BSPC, TAB, A, S, D, F, G, H, J, K, L, ;, '''', LSHFT, Z,
-    X, C, V, B, N, M, ',', ., /, RSHFT, MUTE, LGUI, LALT, LCTRL, lower, RET, SPACE, raise, RCTRL, RALT, RGUI, ENTER, RIGHT, UP ARROW, LEFT, DOWN]
+  default: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '-', '=', ESC, Q, W, E, R, T, Y, U, I, O, P, BSPC, raise, A, S, D, F, G, H, J, K, L, ;, lower, LSHFT,
+    Z, X, C, V, B, N, M, ',', ., /, RSHFT, MUTE, LCTRL, LALT, LGUI, RET, lower, raise, SPACE, RGUI, RALT, RCTRL, '&mkp LCLK', '&mkp MB5', PG UP, '&mkp MB4', PG DN]
   lower:
   - '1'
   - '2'
@@ -38,7 +38,7 @@ layers:
   - DOWN
   - RIGHT
   - '#'
-  - ''''
+  - {t: '''', type: held}
   - {t: ▽, type: trans}
   - CAPS
   - .
@@ -55,7 +55,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: Sft+RET, type: held}
+  - Sft+RET
   - {t: ▽, type: trans}
   - TAB
   - Ctl+RIGHT
@@ -87,12 +87,12 @@ layers:
   - '&TAB_R'
   - '&SCNSHOT'
   - PG UP
-  - '&mkp LCLK'
+  - {t: ▽, type: trans}
   - '&mmv MOVE_UP'
-  - '&mkp RCLK'
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - BT CLR
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Ctl+W
@@ -102,7 +102,7 @@ layers:
   - '&mmv MOVE_LEFT'
   - '&mmv MOVE_DOWN'
   - '&mmv MOVE_RIGHT'
-  - {t: ▽, type: trans}
+  - '&mkp RCLK'
   - {t: BT, h: '0'}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -114,7 +114,7 @@ layers:
   - Sft+[
   - Sft+=
   - Sft+]
-  - {t: ▽, type: trans}
+  - '&mkp LCLK'
   - {t: BT, h: '1'}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -123,7 +123,7 @@ layers:
   - Sft+RET
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -157,24 +157,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - {type: held}
   - ''
   - ''
   - ''
@@ -188,7 +171,24 @@ layers:
   - {type: held}
   - ''
   - ''
-  - {type: held}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - ''
   - ''
   - ''
