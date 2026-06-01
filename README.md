@@ -1,3 +1,6 @@
+# My Keyboard
+![My Keyboard](./Image.jpeg)
+
 # Sofle Hybrid Keyboard Firmware
 
 [![Build Status](../../actions/workflows/build.yml/badge.svg)](../../actions)
