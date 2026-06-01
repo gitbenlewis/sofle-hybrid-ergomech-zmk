@@ -94,7 +94,7 @@ name: name##_macro {                      \
 &kp ESC     &kp Q  &kp W       &kp E    &kp R     &kp T                               &kp Y      &kp U     &kp I     &kp O   &kp P     &kp BSPC
 &mo RAISE   &kp A  &kp S       &kp D    &kp F     &kp G                               &kp H      &kp J     &kp K     &kp L   &kp SEMI  &mo LOWER
 &kp LSHFT   &kp Z  &kp X       &kp C    &kp V     &kp B                               &kp N      &kp M     &kp COMMA &kp DOT &kp FSLH  &kp RSHFT
-      &kp C_MUTE   &kp LCTRL   &kp LALT &kp LGUI  &kp RET   &mo LOWER      &mo RAISE  &kp SPACE  &kp RGUI  &kp RALT  &kp RCTRL
+      &kp C_MUTE   &kp LGUI   &kp LALT &kp LCTRL  &kp RET   &mo LOWER      &mo RAISE  &kp SPACE  &kp RCTRL &kp RALT  &kp  RGUI
                                                                            &mkp LCLK  &mkp MB5  &kp PG_UP &mkp MB4  &kp PG_DN
             >;
 
