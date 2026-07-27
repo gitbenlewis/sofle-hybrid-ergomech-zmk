@@ -32,7 +32,7 @@ layers:
   - '&ESC_A'
   - '&ESC_B'
   - Ctl+C
-  - Gui+V
+  - Ctl+V
   - BSPC
   - LEFT
   - DOWN
@@ -81,40 +81,40 @@ layers:
   - F11
   - F12
   - EP TOG
-  - Gui+W
+  - {t: ▽, type: trans}
   - '&TAB_L'
-  - Gui+T
+  - Ctl+T
   - '&TAB_R'
   - '&SCNSHOT'
   - PG UP
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&mmv MOVE_UP'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - BT CLR
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Ctl+W
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - PG DN
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&mmv MOVE_LEFT'
+  - '&mmv MOVE_DOWN'
+  - '&mmv MOVE_RIGHT'
+  - '&mkp RCLK'
   - {t: BT, h: '0'}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Ctl+N
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Sft+[
   - Sft+=
   - Sft+]
-  - {t: ▽, type: trans}
+  - '&mkp LCLK'
   - {t: BT, h: '1'}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
