@@ -42,7 +42,7 @@ layers:
   - {t: ▽, type: trans}
   - CAPS
   - .
-  - '&RA(RBKT)'
+  - AltGr+]
   - Ctl+Z
   - Ctl+X
   - HOME
