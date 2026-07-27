@@ -106,7 +106,7 @@ name: name##_macro {                      \
 &kp N1    &kp N2    &kp N3       &kp N4      &kp N5        &kp N6                            &trans        &trans        &trans        &trans    &trans     &trans
 &kp N7    &kp N8    &kp N9       &kp N0      &kp MINUS     &kp EQUAL                         &kp END       &kp LPAR      &kp UP        &kp RPAR  &kp PIPE   &kp GRAVE
 &kp TAB   &ESC_M    &ESC_A       &ESC_B      &kp LC(C)     &kp LG(V)                         &kp BSPC      &kp LEFT      &kp DOWN      &kp RIGHT &kp HASH   &kp SQT
-&trans    &kp CAPS  &kp DOT      &RA(RBKT)   &kp LC(Z)     &kp LC(X)                         &kp HOME      &kp LBKT      &kp EQUAL     &kp RBKT  &kp BSLH   &trans
+&trans    &kp CAPS  &kp DOT      &kp RA(RBKT) &kp LC(Z)     &kp LC(X)                         &kp HOME      &kp LBKT      &kp EQUAL     &kp RBKT  &kp BSLH   &trans
           &trans    &trans       &trans      &trans        &kp RS(RET) &trans       &kp TAB  &kp LC(RIGHT) &kp LS(MINUS) &kp RET       &trans
                                                                                     &mkp LCLK  &mkp MB5  &kp PG_UP &mkp MB4  &kp PG_DN
             >;
